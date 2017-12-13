@@ -6,30 +6,34 @@ using System.Threading.Tasks;
 
 namespace DesignPatern.Template
 {
-    public class AutomotiveRobot : RobotTemplate
+    public class CookieRobot : RobotTemplate
     {
         private string name;
-        public AutomotiveRobot(string name)
+        public CookieRobot(string name)
         {
             this.name = name;
         }
         public override void GetParts()
         {
-            System.Console.WriteLine("Get a carburetor...");
+            System.Console.WriteLine("Getting flour ad sugar...");
         }
         public override void Test()
         {
-            System.Console.WriteLine("Reving the engine...");
+            System.Console.WriteLine("Crunching a cookie...");
         }
         public override void Assemble()
         {
-            System.Console.WriteLine("Installing the carburetor...");
+            System.Console.WriteLine("Baking a cookie...");
+        }
+
+        public override bool TestOK()
+        {
+            return false;
         }
 
         public string GetName()
         {
             return this.name;
         }
-        
     }
 }

@@ -4,15 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DesignPatern.Template
+namespace DesignPatern.Builder
 {
-    public class AutomotiveRobot : RobotTemplate
+    public class AutomotiveRobotBuildable : RobotBuildable
     {
-        private string name;
-        public AutomotiveRobot(string name)
-        {
-            this.name = name;
-        }
         public override void GetParts()
         {
             System.Console.WriteLine("Get a carburetor...");
@@ -25,11 +20,5 @@ namespace DesignPatern.Template
         {
             System.Console.WriteLine("Installing the carburetor...");
         }
-
-        public string GetName()
-        {
-            return this.name;
-        }
-        
     }
 }

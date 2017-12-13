@@ -27,9 +27,18 @@ namespace DesignPatern
 
 
             //adapter
-            DesignPaternAutoRun.IAutoRun adapterRun = new Adapter.AdapterAutoRun();
-            adapterRun.Run();
-            
+            //DesignPaternAutoRun.IAutoRun adapterRun = new Adapter.AdapterAutoRun();
+            //adapterRun.Run();
+
+
+            //template
+            //DesignPaternAutoRun.IAutoRun templateRun = new Template.TemplateAutoRun();
+            //templateRun.Run();
+
+
+            ////Builder
+            DesignPaternAutoRun.IAutoRun builderRun = new Builder.BuilderAutoRun();
+            builderRun.Run();
         }
     }
     
